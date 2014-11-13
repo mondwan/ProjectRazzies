@@ -1,0 +1,12 @@
+# Interest data
+
+## For each tweet
+
+* tweet's text
+* tweet's timstamp
+* tweet's hashtags involved
+* tweet's retweet_count
+* tweet's favorite_count
+* # of followers of the author
+* # of friends of the author
+* # of status publish of the author
