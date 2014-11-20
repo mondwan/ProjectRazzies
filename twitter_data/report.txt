@@ -1,3 +1,17 @@
+Film name: A Madea Christmas
+Tweet count: 199
+Film name: The Lone Ranger
+Tweet count: 200
+Film name: Movie 43
+Tweet count: 200
+Film name: After Earth
+Tweet count: 200
+Film name: That's My Boy
+Tweet count: 200
+Film name: Battleship
+Tweet count: 200
+Film name: The Twilight Saga: Breaking Dawn - Part 2
+Tweet count: 200
 Film name: Silver Linings Playbook
 Tweet count: 200
 Film name: Lincoln

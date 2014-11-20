@@ -104,10 +104,14 @@ for film_name in film_names:
     print 'film_name: %s' % film_name
     # Definition for search API
     # https://dev.twitter.com/rest/reference/get/search/tweets
+    since = '%s-01-01' % str(int(film_year) - 1)
+    until = '%s-01-01' % film_year
     try:
         for status in tweepy.Cursor(
             api.search,
             lang='en',
+            since=since,
+            # until=until,
             q=urllib.quote('"%s"' % film_name)
         ).items(limit=max_status_per_film):
             t = MyTweet.parse(film_name, status)
@@ -123,7 +127,7 @@ for film_name in film_names:
         del my_tweets[:]
 
 # Report
-with open(os.path.join('.', 'twitter_data', 'report.txt'), 'w') as f:
+with open(os.path.join('.', 'twitter_data', 'report.txt'), 'a+') as f:
     for (fn, cnt) in count.items():
         f.write('Film name: %s\n' % fn)
         f.write('Tweet count: %d\n' % cnt)
