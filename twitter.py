@@ -63,17 +63,18 @@ class MyTweet(object):
         return cls(arg)
 
 
-def save_to_json(film_name, tweets):
+def save_to_json(film_name, film_award, tweets):
     """
     Save given tweets to a json file inside twitter_data folder
 
     @param film_name string
+    @param film_award string
     @param tweets Array of Class::MyTweet
     """
     data = [t.data for t in tweets]
     json_data = json.dumps(data)
     with open(
-        os.path.join('.', 'twitter_data', '%s.json' % film_name),
+        os.path.join('.', 'twitter_data', film_award, '%s.json' % film_name),
         'w'
     ) as f:
         json.dump(json_data, f)
@@ -88,7 +89,9 @@ consumer_secret = cfg['twitter']['consumer_secret']
 access_token = cfg['twitter']['access_token']
 access_secret = cfg['twitter']['access_secret']
 max_status_per_film = int(cfg['twitter']['max_status_per_film'])
-film_names = cfg['film']['names'].split('\n')
+film_year = '2013'
+film_award = 'razzies'
+film_names = cfg['film']['%s_%s' % (film_year, film_award)].split('\n')
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
@@ -115,7 +118,7 @@ for film_name in film_names:
     except tweepy.error.TweepError, e:
         print e
     finally:
-        save_to_json(film_name, my_tweets)
+        save_to_json(film_name, film_award, my_tweets)
         count[film_name] = len(my_tweets)
         del my_tweets[:]
 

@@ -1,12 +1,8 @@
-Film name: Sans
+Film name: Silver Linings Playbook
 Tweet count: 200
-Film name: Last Passenger
-Tweet count: 172
-Film name: Left Behind
+Film name: Lincoln
 Tweet count: 200
-Film name: Need for speed
+Film name: Life of Pi
 Tweet count: 200
-Film name: The Lego movie
-Tweet count: 200
-Film name: Godzilla
+Film name: Argo
 Tweet count: 200
