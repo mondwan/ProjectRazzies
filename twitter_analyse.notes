@@ -1,0 +1,71 @@
+# About
+
+Notes about the implementation on ```twitter_analyse.py```
+
+@last-modified: 2014-11-26 20:59
+@by: Mond Wan
+
+# idea
+
+0) There are M films and there are N tweets for each of the film. Therefore,
+there are M * N tweets
+
+1) For each film which labeled either of Oscar or Razzies, there are N (N=200,
+hopefully) tweets.
+
+2) For each tweet, there are many attributes. Model those attributes so they
+form characteristic of this tweet.
+
+3) Normalize those characteristics from the N tweets so that they form
+characteristic of this film
+
+# attribute_to_characteristic()
+
+This function extracts attributes from a given tweet and converts them to a
+characteristic.
+
+## Attributes
+
+For all possiblity, please refer to ```twitter.notes```. Below are attribute(s)
+I have taken account currently.
+
+* Polarity of the tweet's content
+* tweet's retweet_count
+* tweet's favorite_count
+* # of followers of the author
+* # of friends of the author
+* # of status publish of the author
+
+## Characteristic
+
+Below are characteristics I have take account currently.
+
+* scaled_polarity: Scaled polarity. Refer to ```calculate_scaled_polarity()```
+
+# calculate_scaled_polarity()
+
+It calculates the polarity's of a tweet and scaled with below parameters
+accordingly.
+
+## parameters
+
+* Polarity of the tweet's content
+* tweet's retweet_count
+* tweet's favorite_count
+* # of followers of the author
+* # of friends of the author
+* # of status publish of the author
+
+## formula
+
+refer to the implementation in ```twitter_analyse.py```
+
+# tweets2film()
+
+Aggreate tweet's characteristics to form a film's characteristics.
+
+## Characteristics
+
+scaled_polarity:
+    average weighted scaled_polarity for each scaled_polarity in tweet's
+    characteristic
