@@ -44,3 +44,13 @@ Film name: The Iron Lady
 Tweet count: 200
 Film name: The Artist
 Tweet count: 200
+Film name: Blue Jasmine
+Tweet count: 200
+Film name: Frozen
+Tweet count: 200
+Film name: 12 Years a Slave
+Tweet count: 200
+Film name: Gravity
+Tweet count: 200
+Film name: Dallas Buyers Club
+Tweet count: 200
