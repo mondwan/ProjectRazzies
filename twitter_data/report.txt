@@ -20,3 +20,27 @@ Film name: Life of Pi
 Tweet count: 200
 Film name: Argo
 Tweet count: 200
+Film name: Jack and Jill
+Tweet count: 200
+Film name: Just Go with It
+Tweet count: 200
+Film name: The Last Airbender
+Tweet count: 200
+Film name: Sex and the City 2
+Tweet count: 190
+Film name: The Twilight Saga: Eclipse
+Tweet count: 104
+Film name: Valentine's Day
+Tweet count: 200
+Film name: The Social Network
+Tweet count: 200
+Film name: In a Better World
+Tweet count: 200
+Film name: Natalie Portman
+Tweet count: 200
+Film name: The King's Speech
+Tweet count: 200
+Film name: The Iron Lady
+Tweet count: 200
+Film name: The Artist
+Tweet count: 200
