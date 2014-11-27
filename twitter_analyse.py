@@ -115,6 +115,30 @@ def tweets2film(tweet_characteristics):
 
     return ret
 
+
+def construct_film_characteristic(film_name, tweet_characteristics):
+    """
+    Construct featuresets for given parameters
+
+    @param film_name string
+    @param tweet_characteristics list of dict
+
+    @return featuresets
+    """
+    ret = {}
+
+    # Analyze film's attributes
+    ret['length_of_film'] = len(film_name)
+    # ret['number_of_words'] = len(film_name.split(' '))
+
+    # Analyze tweet's characteristics
+    aggreated_characteristic = tweets2film(tweet_characteristics)
+
+    # Merge 2 characteristics
+    ret = dict(ret.items() + aggreated_characteristic.items())
+
+    return ret
+
 features = []
 
 for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
@@ -134,7 +158,10 @@ for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
             characteristic = attribute_to_characteristic(tweet)
             tweet_characteristics.append(characteristic)
 
-        film_characteristic = tweets2film(tweet_characteristics)
+        film_characteristic = construct_film_characteristic(
+            film_name,
+            tweet_characteristics
+        )
         print 'film: |%s|' % film_name
         print film_characteristic
         feature = (film_characteristic, label)
@@ -161,7 +188,10 @@ for my_dir in [PREDICT_DIR]:
             characteristic = attribute_to_characteristic(tweet)
             tweet_characteristics.append(characteristic)
 
-        film_characteristic = tweets2film(tweet_characteristics)
+        film_characteristic = construct_film_characteristic(
+            film_name,
+            tweet_characteristics
+        )
         print film_characteristic
         result = classifier.classify(film_characteristic)
         print 'film: |%s| predict: |%s|' % (film_name, result)
