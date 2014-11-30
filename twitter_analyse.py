@@ -12,6 +12,7 @@ from __future__ import division
 import json
 import os
 from math import log
+import numpy
 
 # 3-rd party lib
 # import nltk
@@ -22,7 +23,9 @@ from textblob import TextBlob
 TWEET_DIR = os.path.join('.', 'twitter_data')
 OSCAR_DIR = os.path.join(TWEET_DIR, 'oscar')
 RAZZIES_DIR = os.path.join(TWEET_DIR, 'razzies')
-PREDICT_DIR = os.path.join(TWEET_DIR, 'proof', 'razzies')
+PREDICT_DIR = os.path.join(TWEET_DIR, 'proof')
+# PREDICT_OSCAR_DIR = os.path.join(PREDICT_DIR, 'oscar')
+# PREDICT_RAZZIES_DIR = os.path.join(PREDICT_DIR, 'razzies')
 
 
 def attribute_to_characteristic(tweet):
@@ -51,6 +54,12 @@ def attribute_to_characteristic(tweet):
         int(friends),
         int(publishes)
     )
+    ret['retweets'] = retweets
+    ret['favorites'] = favorites
+    ret['followers'] = followers
+    ret['friends'] = friends
+    ret['publishes'] = publishes
+    ret['polarity'] = polarity
 
     # print 'p=%.2f re=%d fav=%d, fol=%d, fd=%d, pub=%d' % (
     #     polarity, retweets, favorites, followers, friends, publishes
@@ -102,16 +111,56 @@ def tweets2film(tweet_characteristics):
       characteristics of a film
     """
 
-    ret = {
-        'scaled_polarity': 0
-    }
+    ret = {}
 
-    summation = 0
-    num_of_tweet = len(tweet_characteristics)
-    for c in tweet_characteristics:
-        summation += c['scaled_polarity']
+    retweets_data = []
+    favorites_data = []
+    polarities_data = []
+    friends_data = []
+    followers_data = []
 
-    ret['scaled_polarity'] = round(summation / num_of_tweet, 2)
+    for t in tweet_characteristics:
+        retweets_data.append(t['retweets'])
+        favorites_data.append(t['favorites'])
+        polarities_data.append(t['polarity'])
+        friends_data.append(t['friends'])
+        followers_data.append(t['followers'])
+
+    retweets = numpy.array(retweets_data)
+    favorites = numpy.array(favorites_data)
+    polarities = numpy.array(polarities_data)
+    friends = numpy.array(friends_data)
+    followers = numpy.array(followers_data)
+
+    for data_set in [
+        ('retweets', retweets),
+        ('favorites', favorites),
+        ('polarities', polarities),
+        ('friends', friends),
+        ('followers', followers)
+    ]:
+        data_name = data_set[0]
+        data_list = data_set[1]
+        print '|%s| sd: %f mean: %f min: %d max: %d' % (
+            data_name,
+            round(data_list.std(), 2),
+            round(numpy.average(data_list), 2),
+            data_list.min(),
+            data_list.max(),
+        )
+
+    # ret['avg_followers'] = round(numpy.average(followers_data), 2)
+    # ret['avg_friends'] = round(numpy.average(friends_data), 2)
+    ret['avg_polarity'] = round(numpy.average(polarities_data), 2)
+    # ret['avg_retweet'] = round(numpy.average(retweets_data), 2)
+    # ret['std_friends'] = round(friends.std(), 2)
+    # ret['std_followers'] = round(followers.std(), 2)
+    # ret['std_polarity'] = round(polarities.std(), 2)
+    ret['std_retweet'] = round(retweets.std(), 2)
+    # ret['log_friends'] = round(log(sum(friends_data)) / log(2), 2)
+    # ret['log_followers'] = round(log(sum(followers_data)) / log(2), 2)
+    ret['log_retweets'] = round(log(sum(retweets_data)) / log(2), 2)
+    ret['log_favorites'] = round(log(sum(favorites_data)) / log(2), 2)
 
     return ret
 
@@ -129,7 +178,7 @@ def construct_film_characteristic(film_name, tweet_characteristics):
 
     # Analyze film's attributes
     ret['length_of_film'] = len(film_name)
-    # ret['number_of_words'] = len(film_name.split(' '))
+    ret['number_of_words'] = len(film_name.split(' '))
 
     # Analyze tweet's characteristics
     aggreated_characteristic = tweets2film(tweet_characteristics)
@@ -162,19 +211,27 @@ for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
             film_name,
             tweet_characteristics
         )
-        print 'film: |%s|' % film_name
-        print film_characteristic
+        # print 'film: |%s|' % film_name
+        # print film_characteristic
         feature = (film_characteristic, label)
         features.append(feature)
 
 # Train the classifier
 classifier = NaiveBayesClassifier.train(features)
 
-print 'Predicting...'
-
 # Predict the film
-for my_dir in [PREDICT_DIR]:
-    for fn in os.listdir(my_dir):
+report = {}
+predict_labels = ['oscar', 'razzies']
+for predict_label in predict_labels:
+    my_dir = os.path.join(PREDICT_DIR, predict_label)
+    list_of_files = os.listdir(my_dir)
+
+    report[predict_label] = {
+        'number_of_match': 0,
+        'number_of_films': len(list_of_files)
+    }
+
+    for fn in list_of_files:
         path = os.path.join(my_dir, fn)
         film_name = os.path.splitext(fn)[0]
 
@@ -192,8 +249,46 @@ for my_dir in [PREDICT_DIR]:
             film_name,
             tweet_characteristics
         )
-        print film_characteristic
         result = classifier.classify(film_characteristic)
-        print 'film: |%s| predict: |%s|' % (film_name, result)
+
+        if result == predict_label:
+            report[predict_label]['number_of_match'] += 1
+
+        print film_characteristic
+        print 'film: |%s| PREDICT: |%s|\n' % (film_name, result)
+
+report['features'] = film_characteristic.keys()
 
 # classifier.show_most_informative_features()
+print "# Features in film's characteristic\n"
+
+for f in report['features']:
+    print '* %s' % f
+
+print '\n# Prediction\n'
+for predict_label in predict_labels:
+    r = report[predict_label]
+    print '## %s\n' % predict_label
+    print 'match %d out of %d, accuracy=%d%%\n' % (
+        r['number_of_match'],
+        r['number_of_films'],
+        round(r['number_of_match'] / r['number_of_films'] * 100)
+    )
+
+print '## overall\n'
+print 'match %d out of %d, accuracy=%d%%\n' % (
+    sum(
+        [report[p]['number_of_match'] for p in predict_labels]
+    ),
+    sum(
+        [report[p]['number_of_films'] for p in predict_labels]
+    ),
+    round(
+        sum(
+            [report[p]['number_of_match'] for p in predict_labels]
+        ) /
+        sum(
+            [report[p]['number_of_films'] for p in predict_labels]
+        ) * 100
+    )
+)

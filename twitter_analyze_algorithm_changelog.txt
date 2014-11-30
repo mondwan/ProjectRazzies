@@ -1,0 +1,179 @@
+# Features in film's characteristic
+
+* length_of_film
+* scaled_polarity
+
+# Prediction
+
+## oscar
+
+match 1 out of 5, accuracy=20%
+
+## razzies
+
+match 3 out of 4, accuracy=75%
+
+## overall
+
+match 4 out of 9, accuracy=44%
+
+# Features in film's characteristic
+
+* length_of_film
+* scaled_polarity
+* number of words
+
+# Prediction
+
+## oscar
+
+match 2 out of 5, accuracy=40%
+
+## razzies
+
+match 1 out of 4, accuracy=25%
+
+## overall
+
+match 3 out of 9, accuracy=33%
+
+# Features in film's characteristic
+
+* number_of_words
+* length_of_film
+
+# Prediction
+
+## oscar
+
+match 3 out of 5, accuracy=60%
+
+## razzies
+
+match 1 out of 4, accuracy=25%
+
+## overall
+
+match 4 out of 9, accuracy=44%
+
+# Features in film's characteristic
+
+* length_of_film
+
+# Prediction
+
+## oscar
+
+match 4 out of 5, accuracy=80%
+
+## razzies
+
+match 1 out of 4, accuracy=25%
+
+## overall
+
+match 5 out of 9, accuracy=56%
+
+# Features in film's characteristic
+
+* number_of_words
+* scaled_polarity
+
+# Prediction
+
+## oscar
+
+match 3 out of 5, accuracy=60%
+
+## razzies
+
+match 0 out of 4, accuracy=0%
+
+## overall
+
+match 3 out of 9, accuracy=33%
+
+# Features in film's characteristic
+
+* num_of_retweet
+* num_of_tweet
+* length_of_film
+* num_of_favourite
+* scaled_polarity
+
+# Prediction
+
+## oscar
+
+match 2 out of 5, accuracy=40%
+
+## razzies
+
+match 1 out of 4, accuracy=25%
+
+## overall
+
+match 3 out of 9, accuracy=33%
+
+# Features in film's characteristic
+
+* num_of_retweet
+* length_of_film
+* scaled_polarity
+
+# Prediction
+
+## oscar
+
+match 1 out of 5, accuracy=20%
+
+## razzies
+
+match 3 out of 4, accuracy=75%
+
+## overall
+
+match 4 out of 9, accuracy=44%
+
+# Features in film's characteristic
+
+* number_of_words
+* avg_polarity
+* length_of_film
+* std_retweet
+
+# Prediction
+
+## oscar
+
+match 3 out of 5, accuracy=60%
+
+## razzies
+
+match 3 out of 4, accuracy=75%
+
+## overall
+
+match 6 out of 9, accuracy=67%
+
+# Features in film's characteristic
+
+* number_of_words
+* std_polarity
+* length_of_film
+* std_retweet
+
+# Prediction
+
+## oscar
+
+match 3 out of 5, accuracy=60%
+
+## razzies
+
+match 2 out of 4, accuracy=50%
+
+## overall
+
+match 5 out of 9, accuracy=56%
+
