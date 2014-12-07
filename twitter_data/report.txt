@@ -54,3 +54,121 @@ Film name: Gravity
 Tweet count: 200
 Film name: Dallas Buyers Club
 Tweet count: 200
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 200
+Film name: Sex and the City 2
+Tweet count: 192
+Film name: The Twilight Saga: Eclipse
+Tweet count: 200
+Film name: The Bounty Hunter
+Tweet count: 200
+Film name: Vampires Suck
+Tweet count: 200
+Film name: Land of the Lost
+Tweet count: 200
+Film name: All About Steve
+Tweet count: 80
+Film name: G.I. Joe: The Rise of Cobra
+Tweet count: 24
+Film name: Transformers: Revenge of the Fallen
+Tweet count: 165
+Film name: Jack and Jill
+Tweet count: 200
+Film name: New Year's Eva
+Tweet count: 0
+Film name: Bucky Larson
+Tweet count: 27
+Film name: The Twiligh Saga: Breaking Dawn
+Tweet count: 0
+Film name: Transformers: Dark of the Moon
+Tweet count: 200
+Film name: The Hottie & the Nottie
+Tweet count: 5
+Film name: Disaster Movie
+Tweet count: 200
+Film name: The Happening
+Tweet count: 200
+Film name: The Love Guru
+Tweet count: 200
+Film name: Slumdog Millionaire
+Tweet count: 200
+Film name: The Reader
+Tweet count: 200
+Film name: The Curious Case of Benjamin Button
+Tweet count: 200
+Film name: The Bline Side
+Tweet count: 0
+Film name: District 9
+Tweet count: 200
+Film name: Avatar
+Tweet count: 200
+Film name: The Hurt Locker
+Tweet count: 200
+Film name: Inception
+Tweet count: 200
+Film name: Black Swan
+Tweet count: 200
+Film name: Toy Story 3
+Tweet count: 200
+Film name: The Social Network
+Tweet count: 200
+Film name: The King's Speech
+Tweet count: 200
+Film name: The Help
+Tweet count: 200
+Film name: Extremely Loud and Incredibly Close
+Tweet count: 111
+Film name: The Descendants
+Tweet count: 200
+Film name: Midnight in Paris
+Tweet count: 200
