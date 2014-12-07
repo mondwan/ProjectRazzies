@@ -208,3 +208,33 @@ Film name: Son of the Mask
 Tweet count: 0
 Film name: House of Wax
 Tweet count: 0
+Film name: The Dukes of Hazzard
+Tweet count: 200
+Film name: Dirty Love
+Tweet count: 200
+Film name: Deuce Bigalow
+Tweet count: 60
+Film name: Son of the Mask
+Tweet count: 77
+Film name: House of Wax
+Tweet count: 200
+Film name: BloodRayne
+Tweet count: 99
+Film name: Little Man
+Tweet count: 200
+Film name: Basic Instinct 2
+Tweet count: 16
+Film name: Lady in Water
+Tweet count: 22
+Film name: The Wicker Man
+Tweet count: 200
+Film name: Norbit
+Tweet count: 200
+Film name: I Know Who Killed Me
+Tweet count: 71
+Film name: Daddy Day Camp
+Tweet count: 14
+Film name: Bratz
+Tweet count: 200
+Film name: I Now Pronounce You Chuck and Larry
+Tweet count: 34
