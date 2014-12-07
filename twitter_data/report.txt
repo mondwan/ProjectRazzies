@@ -172,3 +172,39 @@ Film name: The Descendants
 Tweet count: 200
 Film name: Midnight in Paris
 Tweet count: 200
+Film name: Atonement
+Tweet count: 200
+Film name: There Will Be Blood
+Tweet count: 200
+Film name: Michael Clayton
+Tweet count: 182
+Film name: No Country for Old Men
+Tweet count: 200
+Film name: The Queen
+Tweet count: 200
+Film name: Babel
+Tweet count: 200
+Film name: Little Miss Sunshine
+Tweet count: 200
+Film name: Letters from lwo Jima
+Tweet count: 0
+Film name: The Departed
+Tweet count: 200
+Film name: Capote
+Tweet count: 200
+Film name: Brokeback Mountain
+Tweet count: 200
+Film name: Good Night, and Good Luck
+Tweet count: 200
+Film name: Munich
+Tweet count: 200
+Film name: The Dukes of Hazzard
+Tweet count: 0
+Film name: Dirty Love
+Tweet count: 165
+Film name: Deuce Bigalow
+Tweet count: 0
+Film name: Son of the Mask
+Tweet count: 0
+Film name: House of Wax
+Tweet count: 0
