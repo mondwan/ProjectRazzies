@@ -12,6 +12,7 @@ import os
 import urllib
 import calendar
 import json
+import time
 
 import configparser
 import tweepy
@@ -91,7 +92,7 @@ access_secret = cfg['twitter']['access_secret']
 max_status_per_film = int(cfg['twitter']['max_status_per_film'])
 film_year = '2013'
 film_award = 'razzies'
-film_names = cfg['film']['%s_%s' % (film_year, film_award)].split('\n')
+film_names = cfg['film']
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
@@ -100,31 +101,33 @@ api = tweepy.API(auth)
 count = {}
 my_tweets = []
 
-for film_name in film_names:
-    print 'film_name: %s' % film_name
-    # Definition for search API
-    # https://dev.twitter.com/rest/reference/get/search/tweets
-    since = '%s-01-01' % str(int(film_year) - 1)
-    until = '%s-01-01' % film_year
-    try:
-        for status in tweepy.Cursor(
-            api.search,
-            lang='en',
-            since=since,
-            # until=until,
-            q=urllib.quote('"%s"' % film_name)
-        ).items(limit=max_status_per_film):
-            t = MyTweet.parse(film_name, status)
-            my_tweets.append(t)
-            print '%d Tweets of [%s] have been proccess' % (
-                len(my_tweets), film_name
-            )
-    except tweepy.error.TweepError, e:
-        print e
-    finally:
-        save_to_json(film_name, film_award, my_tweets)
-        count[film_name] = len(my_tweets)
-        del my_tweets[:]
+for cat in film_names:
+	for film_name in cfg['film'][cat].split('\n'):
+			print 'film_name: %s' % film_name
+			# Definition for search API
+			# https://dev.twitter.com/rest/reference/get/search/tweets
+			since = '%s-01-01' % str(int(film_year) - 1)
+			until = '%s-01-01' % film_year
+			try:
+					for status in tweepy.Cursor(
+							api.search,
+							lang='en',
+							since=since,
+							# until=until,
+							q=urllib.quote('"%s"' % film_name)
+					).items(limit=max_status_per_film):
+							t = MyTweet.parse(film_name, status)
+							my_tweets.append(t)
+							print '%d Tweets of [%s] have been proccess' % (
+									len(my_tweets), film_name
+							)
+							time.sleep(1)
+			except tweepy.error.TweepError, e:
+					print e
+			finally:
+					save_to_json(film_name, film_award, my_tweets)
+					count[film_name] = len(my_tweets)
+					del my_tweets[:]
 
 # Report
 with open(os.path.join('.', 'twitter_data', 'report.txt'), 'a+') as f:
