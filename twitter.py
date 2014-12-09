@@ -90,8 +90,6 @@ consumer_secret = cfg['twitter']['consumer_secret']
 access_token = cfg['twitter']['access_token']
 access_secret = cfg['twitter']['access_secret']
 max_status_per_film = int(cfg['twitter']['max_status_per_film'])
-film_year = '2013'
-film_award = 'razzies'
 film_names = cfg['film']
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -104,6 +102,7 @@ my_tweets = []
 for cat in film_names:
 	for film_name in cfg['film'][cat].split('\n'):
 			print 'film_name: %s' % film_name
+			film_year, film_award = cat.split('_')
 			# Definition for search API
 			# https://dev.twitter.com/rest/reference/get/search/tweets
 			since = '%s-01-01' % str(int(film_year) - 1)
@@ -121,12 +120,13 @@ for cat in film_names:
 							print '%d Tweets of [%s] have been proccess' % (
 									len(my_tweets), film_name
 							)
-							time.sleep(1)
+							time.sleep(0.3)
 			except tweepy.error.TweepError, e:
 					print e
 			finally:
-					save_to_json(film_name, film_award, my_tweets)
 					count[film_name] = len(my_tweets)
+					if count[film_name] > 0:
+						save_to_json(film_name, film_award, my_tweets)
 					del my_tweets[:]
 
 # Report
