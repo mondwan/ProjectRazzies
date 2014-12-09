@@ -54,3 +54,59 @@ Film name: Gravity
 Tweet count: 200
 Film name: Dallas Buyers Club
 Tweet count: 200
+Film name: A Madea Christmas
+Tweet count: 741
+Film name: Silver Linings Playbook
+Tweet count: 2000
+Film name: Life of Pi
+Tweet count: 2000
+Film name: Gravity
+Tweet count: 2000
+Film name: Movie 43
+Tweet count: 406
+Film name: Valentine's Day
+Tweet count: 2000
+Film name: The Lone Ranger
+Tweet count: 1595
+Film name: Argo
+Tweet count: 2000
+Film name: Blue Jasmine
+Tweet count: 503
+Film name: The Social Network
+Tweet count: 2000
+Film name: Jack and Jill
+Tweet count: 1970
+Film name: Lincoln
+Tweet count: 2000
+Film name: Frozen
+Tweet count: 2000
+Film name: The Iron Lady
+Tweet count: 315
+Film name: In a Better World
+Tweet count: 545
+Film name: The Twilight Saga: Eclipse
+Tweet count: 370
+Film name: Natalie Portman
+Tweet count: 2000
+Film name: The Twilight Saga: Breaking Dawn - Part 2
+Tweet count: 383
+Film name: 12 Years a Slave
+Tweet count: 2000
+Film name: The Artist
+Tweet count: 2000
+Film name: The King's Speech
+Tweet count: 442
+Film name: Battleship
+Tweet count: 2000
+Film name: The Last Airbender
+Tweet count: 2000
+Film name: Sex and the City 2
+Tweet count: 27
+Film name: After Earth
+Tweet count: 1316
+Film name: Dallas Buyers Club
+Tweet count: 2000
+Film name: Just Go with It
+Tweet count: 2000
+Film name: That's My Boy
+Tweet count: 2000
