@@ -110,3 +110,187 @@ Film name: Just Go with It
 Tweet count: 2000
 Film name: That's My Boy
 Tweet count: 2000
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 0
+Film name: Sex and the City 2
+Tweet count: 0
+Film name: The Twilight Saga: Eclipse
+Tweet count: 0
+Film name: The Bounty Hunter
+Tweet count: 0
+Film name: Vampires Suck
+Tweet count: 0
+Film name: The Last Airbender
+Tweet count: 200
+Film name: Sex and the City 2
+Tweet count: 192
+Film name: The Twilight Saga: Eclipse
+Tweet count: 200
+Film name: The Bounty Hunter
+Tweet count: 200
+Film name: Vampires Suck
+Tweet count: 200
+Film name: Land of the Lost
+Tweet count: 200
+Film name: All About Steve
+Tweet count: 80
+Film name: G.I. Joe: The Rise of Cobra
+Tweet count: 24
+Film name: Transformers: Revenge of the Fallen
+Tweet count: 165
+Film name: Jack and Jill
+Tweet count: 200
+Film name: New Year's Eva
+Tweet count: 0
+Film name: Bucky Larson
+Tweet count: 27
+Film name: The Twiligh Saga: Breaking Dawn
+Tweet count: 0
+Film name: Transformers: Dark of the Moon
+Tweet count: 200
+Film name: The Hottie & the Nottie
+Tweet count: 5
+Film name: Disaster Movie
+Tweet count: 200
+Film name: The Happening
+Tweet count: 200
+Film name: The Love Guru
+Tweet count: 200
+Film name: Slumdog Millionaire
+Tweet count: 200
+Film name: The Reader
+Tweet count: 200
+Film name: The Curious Case of Benjamin Button
+Tweet count: 200
+Film name: The Bline Side
+Tweet count: 0
+Film name: District 9
+Tweet count: 200
+Film name: Avatar
+Tweet count: 200
+Film name: The Hurt Locker
+Tweet count: 200
+Film name: Inception
+Tweet count: 200
+Film name: Black Swan
+Tweet count: 200
+Film name: Toy Story 3
+Tweet count: 200
+Film name: The Social Network
+Tweet count: 200
+Film name: The King's Speech
+Tweet count: 200
+Film name: The Help
+Tweet count: 200
+Film name: Extremely Loud and Incredibly Close
+Tweet count: 111
+Film name: The Descendants
+Tweet count: 200
+Film name: Midnight in Paris
+Tweet count: 200
+Film name: Atonement
+Tweet count: 200
+Film name: There Will Be Blood
+Tweet count: 200
+Film name: Michael Clayton
+Tweet count: 182
+Film name: No Country for Old Men
+Tweet count: 200
+Film name: The Queen
+Tweet count: 200
+Film name: Babel
+Tweet count: 200
+Film name: Little Miss Sunshine
+Tweet count: 200
+Film name: Letters from lwo Jima
+Tweet count: 0
+Film name: The Departed
+Tweet count: 200
+Film name: Capote
+Tweet count: 200
+Film name: Brokeback Mountain
+Tweet count: 200
+Film name: Good Night, and Good Luck
+Tweet count: 200
+Film name: Munich
+Tweet count: 200
+Film name: The Dukes of Hazzard
+Tweet count: 0
+Film name: Dirty Love
+Tweet count: 165
+Film name: Deuce Bigalow
+Tweet count: 0
+Film name: Son of the Mask
+Tweet count: 0
+Film name: House of Wax
+Tweet count: 0
+Film name: The Dukes of Hazzard
+Tweet count: 200
+Film name: Dirty Love
+Tweet count: 200
+Film name: Deuce Bigalow
+Tweet count: 60
+Film name: Son of the Mask
+Tweet count: 77
+Film name: House of Wax
+Tweet count: 200
+Film name: BloodRayne
+Tweet count: 99
+Film name: Little Man
+Tweet count: 200
+Film name: Basic Instinct 2
+Tweet count: 16
+Film name: Lady in Water
+Tweet count: 22
+Film name: The Wicker Man
+Tweet count: 200
+Film name: Norbit
+Tweet count: 200
+Film name: I Know Who Killed Me
+Tweet count: 71
+Film name: Daddy Day Camp
+Tweet count: 14
+Film name: Bratz
+Tweet count: 200
+Film name: I Now Pronounce You Chuck and Larry
+Tweet count: 34
