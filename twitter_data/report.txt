@@ -294,3 +294,183 @@ Film name: Bratz
 Tweet count: 200
 Film name: I Now Pronounce You Chuck and Larry
 Tweet count: 34
+Film name: Vampires Suck
+Tweet count: 216
+Film name: Last Passenger
+Tweet count: 314
+Film name: Life of Pi
+Tweet count: 2000
+Film name: Left Behind
+Tweet count: 2000
+Film name: I Know Who Killed Me
+Tweet count: 29
+Film name: The Hottie & the Nottie
+Tweet count: 5
+Film name: Lady in Water
+Tweet count: 21
+Film name: Michael Clayton
+Tweet count: 195
+Film name: The Lone Ranger
+Tweet count: 1343
+Film name: Norbit
+Tweet count: 786
+Film name: The Lego movie
+Tweet count: 2000
+Film name: Argo
+Tweet count: 2000
+Film name: Inception
+Tweet count: 2000
+Film name: New Year's Eva
+Tweet count: 0
+Film name: G.I. Joe: The Rise of Cobra
+Tweet count: 18
+Film name: The Wicker Man
+Tweet count: 472
+Film name: House of Wax
+Tweet count: 258
+Film name: The Twilight Saga: Breaking Dawn - Part 2
+Tweet count: 424
+Film name: Land of the Lost
+Tweet count: 372
+Film name: 12 Years a Slave
+Tweet count: 2000
+Film name: Natalie Portman
+Tweet count: 2000
+Film name: The King's Speech
+Tweet count: 481
+Film name: Battleship
+Tweet count: 2000
+Film name: Silver Linings Playbook
+Tweet count: 2000
+Film name: Slumdog Millionaire
+Tweet count: 604
+Film name: Gravity
+Tweet count: 2000
+Film name: Capote
+Tweet count: 2000
+Film name: Need for speed
+Tweet count: 2000
+Film name: Brokeback Mountain
+Tweet count: 1770
+Film name: Godzilla
+Tweet count: 2000
+Film name: The Last Airbender
+Tweet count: 2000
+Film name: The Iron Lady
+Tweet count: 317
+Film name: The Hurt Locker
+Tweet count: 220
+Film name: Jack and Jill
+Tweet count: 1413
+Film name: Basic Instinct 2
+Tweet count: 13
+Film name: Sans
+Tweet count: 2000
+Film name: There Will Be Blood
+Tweet count: 1608
+Film name: Transformers: Revenge of the Fallen
+Tweet count: 153
+Film name: The Bline Side
+Tweet count: 0
+Film name: The Social Network
+Tweet count: 2000
+Film name: The Artist
+Tweet count: 2000
+Film name: Bratz
+Tweet count: 2000
+Film name: The Dukes of Hazzard
+Tweet count: 436
+Film name: Midnight in Paris
+Tweet count: 716
+Film name: The Love Guru
+Tweet count: 185
+Film name: The Reader
+Tweet count: 2000
+Film name: Movie 43
+Tweet count: 410
+Film name: Atonement
+Tweet count: 2000
+Film name: Valentine's Day
+Tweet count: 2000
+Film name: Disaster Movie
+Tweet count: 479
+Film name: No Country for Old Men
+Tweet count: 917
+Film name: Letters from lwo Jima
+Tweet count: 0
+Film name: Deuce Bigalow
+Tweet count: 67
+Film name: Little Man
+Tweet count: 2000
+Film name: Lincoln
+Tweet count: 2000
+Film name: In a Better World
+Tweet count: 584
+Film name: The Descendants
+Tweet count: 1838
+Film name: Dirty Love
+Tweet count: 777
+Film name: The Happening
+Tweet count: 1799
+Film name: All About Steve
+Tweet count: 98
+Film name: BloodRayne
+Tweet count: 85
+Film name: Little Miss Sunshine
+Tweet count: 2000
+Film name: After Earth
+Tweet count: 1243
+Film name: A Madea Christmas
+Tweet count: 682
+Film name: The Bounty Hunter
+Tweet count: 905
+Film name: Toy Story 3
+Tweet count: 2000
+Film name: Babel
+Tweet count: 2000
+Film name: Black Swan
+Tweet count: 2000
+Film name: Daddy Day Camp
+Tweet count: 17
+Film name: The Curious Case of Benjamin Button
+Tweet count: 1073
+Film name: District 9
+Tweet count: 1078
+Film name: Munich
+Tweet count: 2000
+Film name: The Help
+Tweet count: 2000
+Film name: Blue Jasmine
+Tweet count: 509
+Film name: Son of the Mask
+Tweet count: 74
+Film name: Transformers: Dark of the Moon
+Tweet count: 439
+Film name: Frozen
+Tweet count: 2000
+Film name: Sex and the City 2
+Tweet count: 51
+Film name: The Twilight Saga: Eclipse
+Tweet count: 374
+Film name: Avatar
+Tweet count: 2000
+Film name: Extremely Loud and Incredibly Close
+Tweet count: 102
+Film name: I Now Pronounce You Chuck and Larry
+Tweet count: 254
+Film name: Good Night, and Good Luck
+Tweet count: 809
+Film name: The Departed
+Tweet count: 2000
+Film name: The Queen
+Tweet count: 2000
+Film name: Dallas Buyers Club
+Tweet count: 2000
+Film name: Just Go with It
+Tweet count: 2000
+Film name: That's My Boy
+Tweet count: 2000
+Film name: The Twiligh Saga: Breaking Dawn
+Tweet count: 0
+Film name: Bucky Larson
+Tweet count: 24
