@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 File: twitter_analyse.py
 Author: Me
@@ -192,6 +193,7 @@ features = []
 
 for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
     label = os.path.basename(my_dir)
+    print "=========== Training {0} ============".format(label)
     for fn in os.listdir(my_dir):
         path = os.path.join(my_dir, fn)
         film_name = os.path.splitext(fn)[0]
@@ -207,17 +209,22 @@ for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
             characteristic = attribute_to_characteristic(tweet)
             tweet_characteristics.append(characteristic)
 
-        film_characteristic = construct_film_characteristic(
-            film_name,
-            tweet_characteristics
-        )
-        # print 'film: |%s|' % film_name
-        # print film_characteristic
-        feature = (film_characteristic, label)
-        features.append(feature)
+        try:
+					film_characteristic = construct_film_characteristic(
+							film_name,
+							tweet_characteristics
+					)
+        except Exception as e:
+					print '{0}: {1}'.format(film_name, e)
+        else:
+					# print 'film: |%s|' % film_name
+					# print film_characteristic
+					feature = (film_characteristic, label)
+					features.append(feature)
 
 # Train the classifier
 classifier = NaiveBayesClassifier.train(features)
+classifier.show_most_informative_features(10)
 
 # Predict the film
 report = {}
