@@ -17,7 +17,7 @@ import numpy
 
 # 3-rd party lib
 # import nltk
-from nltk.classify import NaiveBayesClassifier
+from sklearn.ensemble import RandomForestClassifier
 from textblob import TextBlob
 
 # Constants
@@ -189,8 +189,10 @@ def construct_film_characteristic(film_name, tweet_characteristics):
 
     return ret
 
+predict_labels = ['oscar', 'razzies']
 features = []
 
+labels = []
 for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
     label = os.path.basename(my_dir)
     print "=========== Training {0} ============".format(label)
@@ -210,25 +212,19 @@ for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
             tweet_characteristics.append(characteristic)
 
         try:
-					film_characteristic = construct_film_characteristic(
-							film_name,
-							tweet_characteristics
-					)
+          aggreated_characteristic = tweets2film(tweet_characteristics)
         except Exception as e:
 					print '{0}: {1}'.format(film_name, e)
         else:
-					# print 'film: |%s|' % film_name
-					# print film_characteristic
-					feature = (film_characteristic, label)
-					features.append(feature)
+          features.append(aggreated_characteristic.values())
+          labels.append(predict_labels.index(label))
 
 # Train the classifier
-classifier = NaiveBayesClassifier.train(features)
-classifier.show_most_informative_features(10)
+classifier = RandomForestClassifier(n_estimators=100)
+classifier = classifier.fit(features, labels)
 
 # Predict the film
 report = {}
-predict_labels = ['oscar', 'razzies']
 for predict_label in predict_labels:
     my_dir = os.path.join(PREDICT_DIR, predict_label)
     list_of_files = os.listdir(my_dir)
@@ -252,25 +248,16 @@ for predict_label in predict_labels:
             characteristic = attribute_to_characteristic(tweet)
             tweet_characteristics.append(characteristic)
 
-        film_characteristic = construct_film_characteristic(
-            film_name,
-            tweet_characteristics
-        )
-        result = classifier.classify(film_characteristic)
+        aggreated_characteristic = tweets2film(tweet_characteristics)
+        resultNo = classifier.predict(aggreated_characteristic.values())
+        result = predict_labels[resultNo]
 
         if result == predict_label:
             report[predict_label]['number_of_match'] += 1
 
-        print film_characteristic
         print 'film: |%s| PREDICT: |%s|\n' % (film_name, result)
 
-report['features'] = film_characteristic.keys()
 
-# classifier.show_most_informative_features()
-print "# Features in film's characteristic\n"
-
-for f in report['features']:
-    print '* %s' % f
 
 print '\n# Prediction\n'
 for predict_label in predict_labels:
