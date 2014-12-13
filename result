@@ -1,0 +1,44 @@
+=========== Training oscar ============
+=========== Training razzies ============
+defaultdict(<type 'int'>, {0: 112, 1: 88})
+film: |Frozen| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 179, 1: 21})
+film: |Dallas Buyers Club| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 172, 1: 28})
+film: |Gravity| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 175, 1: 25})
+film: |Blue Jasmine| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 177, 1: 23})
+film: |12 Years a Slave| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 164, 1: 36})
+film: |The Lone Ranger| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 113, 1: 86})
+film: |A Madea Christmas| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 159, 1: 41})
+film: |Movie 43| PREDICT: |oscar|
+
+defaultdict(<type 'int'>, {0: 134, 1: 66})
+film: |After Earth| PREDICT: |oscar|
+
+
+# Prediction
+
+## oscar
+
+match 5 out of 5, accuracy=100%
+
+## razzies
+
+match 0 out of 4, accuracy=0%
+
+## overall
+
+match 5 out of 9, accuracy=56%
+

@@ -14,6 +14,7 @@ import json
 import os
 from math import log
 import numpy
+from collections import defaultdict
 
 # 3-rd party lib
 # import nltk
@@ -205,19 +206,11 @@ for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
             tweets = json.load(f)
             tweets = json.loads(tweets)
 
-        tweet_characteristics = []
         for tweet in tweets:
             # Per tweet analyze
             characteristic = attribute_to_characteristic(tweet)
-            tweet_characteristics.append(characteristic)
-
-        try:
-          aggreated_characteristic = tweets2film(tweet_characteristics)
-        except Exception as e:
-					print '{0}: {1}'.format(film_name, e)
-        else:
-          features.append(aggreated_characteristic.values())
-          labels.append(predict_labels.index(label))
+            features.append(characteristic.values())
+            labels.append(predict_labels.index(label))
 
 # Train the classifier
 classifier = RandomForestClassifier(n_estimators=100)
@@ -242,15 +235,18 @@ for predict_label in predict_labels:
             tweets = json.load(f)
             tweets = json.loads(tweets)
 
-        tweet_characteristics = []
+        resultSet = defaultdict(int)
         for tweet in tweets:
             # Per tweet analyze
             characteristic = attribute_to_characteristic(tweet)
-            tweet_characteristics.append(characteristic)
+            prediction = classifier.predict(characteristic.values())
+            resultSet[prediction[0]] += 1
 
-        aggreated_characteristic = tweets2film(tweet_characteristics)
-        resultNo = classifier.predict(aggreated_characteristic.values())
-        result = predict_labels[resultNo]
+        print resultSet
+        if resultSet[0] > resultSet[1]:
+          result = predict_labels[0]
+        else:
+          result = predict_labels[1]
 
         if result == predict_label:
             report[predict_label]['number_of_match'] += 1
