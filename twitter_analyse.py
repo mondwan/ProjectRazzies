@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 File: twitter_analyse.py
 Author: Me
@@ -13,6 +14,7 @@ import json
 import os
 from math import log
 import numpy
+from collections import defaultdict
 
 # 3-rd party lib
 # import nltk
@@ -193,6 +195,7 @@ features = []
 for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
     label = os.path.basename(my_dir)
     for fn in os.listdir(my_dir):
+        tweetno = 0
         path = os.path.join(my_dir, fn)
         film_name = os.path.splitext(fn)[0]
         # print 'dir=%s, film_name=%s, path=%s' % (my_dir, film_name, path)
@@ -205,16 +208,10 @@ for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
         for tweet in tweets:
             # Per tweet analyze
             characteristic = attribute_to_characteristic(tweet)
-            tweet_characteristics.append(characteristic)
-
-        film_characteristic = construct_film_characteristic(
-            film_name,
-            tweet_characteristics
-        )
-        # print 'film: |%s|' % film_name
-        # print film_characteristic
-        feature = (film_characteristic, label)
-        features.append(feature)
+            feature = (characteristic, label)
+            features.append(feature)
+            tweetno += 1
+        print '{0} - {1}: {2}'.format(film_name, label, tweetno)
 
 # Train the classifier
 classifier = NaiveBayesClassifier.train(features)
@@ -239,31 +236,25 @@ for predict_label in predict_labels:
             tweets = json.load(f)
             tweets = json.loads(tweets)
 
+        resultSet = defaultdict(int)
         tweet_characteristics = []
         for tweet in tweets:
             # Per tweet analyze
             characteristic = attribute_to_characteristic(tweet)
-            tweet_characteristics.append(characteristic)
+            resultSet[classifier.classify(characteristic)] += 1
 
-        film_characteristic = construct_film_characteristic(
-            film_name,
-            tweet_characteristics
-        )
-        result = classifier.classify(film_characteristic)
+
+
+        if resultSet['razzies'] > resultSet['oscar']:
+					result = 'razzies'
+        else:
+					result = 'oscar'
 
         if result == predict_label:
             report[predict_label]['number_of_match'] += 1
 
-        print film_characteristic
         print 'film: |%s| PREDICT: |%s|\n' % (film_name, result)
-
-report['features'] = film_characteristic.keys()
-
-# classifier.show_most_informative_features()
-print "# Features in film's characteristic\n"
-
-for f in report['features']:
-    print '* %s' % f
+        print 'razzy tweets: {0}, oscary tweets: {1}'.format(resultSet['razzies'], resultSet['oscar'])
 
 print '\n# Prediction\n'
 for predict_label in predict_labels:
