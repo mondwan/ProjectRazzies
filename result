@@ -64,11 +64,6 @@
 |polarities| sd: 0.230000 mean: 0.150000 min: 0 max: 1
 |friends| sd: 3843.970000 mean: 908.780000 min: 0 max: 122874
 |followers| sd: 93656.390000 mean: 4244.930000 min: 0 max: 4145903
-|retweets| sd: 987.780000 mean: 691.270000 min: 0 max: 14567
-|favorites| sd: 0.780000 mean: 0.100000 min: 0 max: 20
-|polarities| sd: 0.290000 mean: 0.110000 min: -1 max: 1
-|friends| sd: 6802.400000 mean: 1081.320000 min: 0 max: 187021
-|followers| sd: 20808.860000 mean: 2154.490000 min: 0 max: 817790
 |retweets| sd: 55.090000 mean: 19.330000 min: 0 max: 938
 |favorites| sd: 3.600000 mean: 0.580000 min: 0 max: 75
 |polarities| sd: 0.340000 mean: 0.050000 min: -1 max: 1
@@ -124,11 +119,6 @@
 |polarities| sd: 0.270000 mean: 0.100000 min: -1 max: 1
 |friends| sd: 5157.170000 mean: 1130.430000 min: 0 max: 174992
 |followers| sd: 99072.330000 mean: 4788.640000 min: 0 max: 4354027
-|retweets| sd: 203.140000 mean: 108.250000 min: 0 max: 2156
-|favorites| sd: 23.710000 mean: 0.890000 min: 0 max: 1060
-|polarities| sd: 0.300000 mean: 0.140000 min: -1 max: 1
-|friends| sd: 1751.340000 mean: 809.350000 min: 0 max: 32858
-|followers| sd: 46483.080000 mean: 2608.750000 min: 0 max: 1886489
 |retweets| sd: 0.590000 mean: 0.360000 min: 0 max: 2
 |favorites| sd: 0.700000 mean: 0.330000 min: 0 max: 3
 |polarities| sd: 0.150000 mean: 0.410000 min: 0 max: 0
@@ -159,11 +149,6 @@
 |polarities| sd: 0.270000 mean: 0.050000 min: -1 max: 1
 |friends| sd: 4397.900000 mean: 1529.170000 min: 0 max: 41140
 |followers| sd: 16451.960000 mean: 2822.820000 min: 0 max: 463170
-|retweets| sd: 677.470000 mean: 101.680000 min: 0 max: 21603
-|favorites| sd: 1.580000 mean: 0.250000 min: 0 max: 53
-|polarities| sd: 0.260000 mean: 0.090000 min: -1 max: 1
-|friends| sd: 6909.110000 mean: 1414.360000 min: 0 max: 157532
-|followers| sd: 23581.970000 mean: 2868.470000 min: 0 max: 876353
 |retweets| sd: 167.160000 mean: 8.130000 min: 0 max: 5339
 |favorites| sd: 2.850000 mean: 0.450000 min: 0 max: 77
 |polarities| sd: 0.420000 mean: 0.240000 min: -1 max: 1
@@ -184,21 +169,11 @@
 |polarities| sd: 0.250000 mean: 0.100000 min: 0 max: 1
 |friends| sd: 829.230000 mean: 672.450000 min: 2 max: 6807
 |followers| sd: 2422.240000 mean: 1243.050000 min: 3 max: 22927
-|retweets| sd: 3.490000 mean: 1.020000 min: 0 max: 42
-|favorites| sd: 1.700000 mean: 0.400000 min: 0 max: 21
-|polarities| sd: 0.150000 mean: 0.050000 min: 0 max: 0
-|friends| sd: 3430.650000 mean: 1217.690000 min: 0 max: 43740
-|followers| sd: 11859.340000 mean: 2708.800000 min: 0 max: 204631
 |retweets| sd: 638.760000 mean: 87.590000 min: 0 max: 9428
 |favorites| sd: 1.660000 mean: 0.390000 min: 0 max: 35
 |polarities| sd: 0.300000 mean: 0.140000 min: -1 max: 1
 |friends| sd: 5293.480000 mean: 939.180000 min: 0 max: 213755
 |followers| sd: 18465.040000 mean: 2672.350000 min: 0 max: 490119
-|retweets| sd: 167.790000 mean: 14.270000 min: 0 max: 2967
-|favorites| sd: 2.980000 mean: 0.490000 min: 0 max: 105
-|polarities| sd: 0.290000 mean: 0.050000 min: -1 max: 1
-|friends| sd: 3363.420000 mean: 1039.710000 min: 0 max: 69007
-|followers| sd: 15259.700000 mean: 3148.260000 min: 0 max: 299165
 =========== Training razzies ============
 |retweets| sd: 402.340000 mean: 345.480000 min: 0 max: 2079
 |favorites| sd: 18.050000 mean: 0.670000 min: 0 max: 762
@@ -316,26 +291,11 @@ The Hottie & the Nottie: math domain error
 |polarities| sd: 0.290000 mean: 0.090000 min: -1 max: 1
 |friends| sd: 1026.250000 mean: 724.230000 min: 12 max: 7143
 |followers| sd: 2882.330000 mean: 1104.950000 min: 4 max: 23501
-|retweets| sd: 46.040000 mean: 11.710000 min: 0 max: 213
-|favorites| sd: 1.260000 mean: 0.220000 min: 0 max: 31
-|polarities| sd: 0.240000 mean: 0.150000 min: 0 max: 1
-|friends| sd: 6963.170000 mean: 2054.690000 min: 0 max: 122873
-|followers| sd: 11654.960000 mean: 2978.100000 min: 0 max: 176342
 |retweets| sd: 219.500000 mean: 151.800000 min: 0 max: 814
 |favorites| sd: 26.120000 mean: 1.010000 min: 0 max: 1150
 |polarities| sd: 0.270000 mean: 0.110000 min: -1 max: 1
 |friends| sd: 3044.650000 mean: 1093.900000 min: -103 max: 86314
 |followers| sd: 37600.350000 mean: 2723.570000 min: 0 max: 1645574
-|retweets| sd: 0.550000 mean: 0.150000 min: 0 max: 4
-|favorites| sd: 0.760000 mean: 0.200000 min: 0 max: 8
-|polarities| sd: 0.280000 mean: 0.140000 min: -1 max: 1
-|friends| sd: 1480.010000 mean: 996.370000 min: 0 max: 17253
-|followers| sd: 2482.790000 mean: 1232.310000 min: 0 max: 33503
-|retweets| sd: 2184.780000 mean: 109.680000 min: 0 max: 44294
-|favorites| sd: 3.490000 mean: 0.700000 min: 0 max: 66
-|polarities| sd: 0.300000 mean: 0.060000 min: -1 max: 1
-|friends| sd: 4016.010000 mean: 1883.470000 min: 10 max: 46314
-|followers| sd: 18393.090000 mean: 3117.870000 min: 7 max: 358941
 |retweets| sd: 34.390000 mean: 18.540000 min: 0 max: 88
 |favorites| sd: 7.960000 mean: 0.530000 min: 0 max: 166
 |polarities| sd: 0.160000 mean: -0.030000 min: 0 max: 0
@@ -367,11 +327,6 @@ The Hottie & the Nottie: math domain error
 |friends| sd: 594.290000 mean: 589.940000 min: 39 max: 1536
 |followers| sd: 17628.430000 mean: 7506.290000 min: 18 max: 55717
 Daddy Day Camp: math domain error
-|retweets| sd: 83.250000 mean: 4.940000 min: 0 max: 2565
-|favorites| sd: 1.340000 mean: 0.200000 min: 0 max: 31
-|polarities| sd: 0.260000 mean: 0.040000 min: -1 max: 1
-|friends| sd: 3789.080000 mean: 796.350000 min: 0 max: 95480
-|followers| sd: 10873.920000 mean: 1641.650000 min: 0 max: 313680
 |retweets| sd: 0.690000 mean: 0.390000 min: 0 max: 2
 |favorites| sd: 1.010000 mean: 0.480000 min: 0 max: 6
 |polarities| sd: 0.230000 mean: 0.130000 min: 0 max: 1
@@ -405,87 +360,87 @@ Basic Instinct 2: math domain error
 |friends| sd: 3019.990000 mean: 964.310000 min: 8 max: 36030
 |followers| sd: 45448.880000 mean: 4991.000000 min: 7 max: 681357
 Most Informative Features
-          length_of_film = 13             razzie : oscar  =      5.4 : 1.0
+          length_of_film = 13             razzie : oscar  =      5.3 : 1.0
             avg_polarity = 0.07           razzie : oscar  =      3.2 : 1.0
             avg_polarity = 0.1             oscar : razzie =      2.8 : 1.0
-          length_of_film = 6               oscar : razzie =      2.8 : 1.0
             avg_polarity = 0.13           razzie : oscar  =      2.5 : 1.0
-            avg_polarity = 0.14            oscar : razzie =      2.2 : 1.0
-            avg_polarity = 0.15            oscar : razzie =      2.2 : 1.0
-         number_of_words = 1               oscar : razzie =      2.1 : 1.0
-            avg_polarity = 0.12            oscar : razzie =      2.0 : 1.0
+         number_of_words = 4              razzie : oscar  =      2.4 : 1.0
+          length_of_film = 17              oscar : razzie =      2.2 : 1.0
+          length_of_film = 6               oscar : razzie =      2.2 : 1.0
+            avg_polarity = 0.12            oscar : razzie =      2.1 : 1.0
+          length_of_film = 12             razzie : oscar  =      1.8 : 1.0
           length_of_film = 20             razzie : oscar  =      1.8 : 1.0
-|retweets| sd: 1579.930000 mean: 351.790000 min: 0 max: 15029
-|favorites| sd: 0.120000 mean: 0.010000 min: 0 max: 1
-|polarities| sd: 0.230000 mean: 0.080000 min: -1 max: 1
-|friends| sd: 2979.570000 mean: 694.990000 min: 2 max: 35233
-|followers| sd: 4073.110000 mean: 1031.760000 min: 4 max: 35620
-{'length_of_film': 6, 'avg_polarity': 0.08, 'log_retweets': 16.1, 'number_of_words': 1, 'log_favorites': 1.58, 'std_retweet': 1579.93}
+|retweets| sd: 987.780000 mean: 691.270000 min: 0 max: 14567
+|favorites| sd: 0.780000 mean: 0.100000 min: 0 max: 20
+|polarities| sd: 0.290000 mean: 0.110000 min: -1 max: 1
+|friends| sd: 6802.400000 mean: 1081.320000 min: 0 max: 187021
+|followers| sd: 20808.860000 mean: 2154.490000 min: 0 max: 817790
+{'length_of_film': 6, 'avg_polarity': 0.11, 'log_retweets': 20.4, 'number_of_words': 1, 'log_favorites': 7.63, 'std_retweet': 987.78}
 film: |Frozen| PREDICT: |oscar|
 
-|retweets| sd: 66.300000 mean: 11.210000 min: 0 max: 788
-|favorites| sd: 0.990000 mean: 0.320000 min: 0 max: 9
-|polarities| sd: 0.300000 mean: 0.170000 min: -1 max: 1
-|friends| sd: 1178.120000 mean: 652.360000 min: 0 max: 8603
-|followers| sd: 24958.510000 mean: 3549.450000 min: 0 max: 301055
-{'length_of_film': 18, 'avg_polarity': 0.17, 'log_retweets': 11.13, 'number_of_words': 3, 'log_favorites': 6.0, 'std_retweet': 66.3}
-film: |Dallas Buyers Club| PREDICT: |razzies|
+|retweets| sd: 203.140000 mean: 108.250000 min: 0 max: 2156
+|favorites| sd: 23.710000 mean: 0.890000 min: 0 max: 1060
+|polarities| sd: 0.300000 mean: 0.140000 min: -1 max: 1
+|friends| sd: 1751.340000 mean: 809.350000 min: 0 max: 32858
+|followers| sd: 46483.080000 mean: 2608.750000 min: 0 max: 1886489
+{'length_of_film': 18, 'avg_polarity': 0.14, 'log_retweets': 17.72, 'number_of_words': 3, 'log_favorites': 10.8, 'std_retweet': 203.14}
+film: |Dallas Buyers Club| PREDICT: |oscar|
 
-|retweets| sd: 191.500000 mean: 45.020000 min: 0 max: 1816
-|favorites| sd: 0.260000 mean: 0.070000 min: 0 max: 1
-|polarities| sd: 0.320000 mean: 0.030000 min: 0 max: 1
-|friends| sd: 7160.850000 mean: 1518.700000 min: 0 max: 87265
-|followers| sd: 132902.070000 mean: 11175.330000 min: 1 max: 1883477
-{'length_of_film': 7, 'avg_polarity': 0.03, 'log_retweets': 13.14, 'number_of_words': 1, 'log_favorites': 3.81, 'std_retweet': 191.5}
-film: |Gravity| PREDICT: |razzies|
+|retweets| sd: 677.470000 mean: 101.680000 min: 0 max: 21603
+|favorites| sd: 1.580000 mean: 0.250000 min: 0 max: 53
+|polarities| sd: 0.260000 mean: 0.090000 min: -1 max: 1
+|friends| sd: 6909.110000 mean: 1414.360000 min: 0 max: 157532
+|followers| sd: 23581.970000 mean: 2868.470000 min: 0 max: 876353
+{'length_of_film': 7, 'avg_polarity': 0.09, 'log_retweets': 17.63, 'number_of_words': 1, 'log_favorites': 8.98, 'std_retweet': 677.47}
+film: |Gravity| PREDICT: |oscar|
 
-|retweets| sd: 12.690000 mean: 1.990000 min: 0 max: 170
-|favorites| sd: 1.500000 mean: 0.410000 min: 0 max: 17
-|polarities| sd: 0.170000 mean: 0.100000 min: 0 max: 0
-|friends| sd: 982.730000 mean: 607.790000 min: 2 max: 8502
-|followers| sd: 7639.920000 mean: 1485.190000 min: 0 max: 98819
-{'length_of_film': 12, 'avg_polarity': 0.1, 'log_retweets': 8.63, 'number_of_words': 2, 'log_favorites': 6.36, 'std_retweet': 12.69}
+|retweets| sd: 3.490000 mean: 1.020000 min: 0 max: 42
+|favorites| sd: 1.700000 mean: 0.400000 min: 0 max: 21
+|polarities| sd: 0.150000 mean: 0.050000 min: 0 max: 0
+|friends| sd: 3430.650000 mean: 1217.690000 min: 0 max: 43740
+|followers| sd: 11859.340000 mean: 2708.800000 min: 0 max: 204631
+{'length_of_film': 12, 'avg_polarity': 0.05, 'log_retweets': 9.01, 'number_of_words': 2, 'log_favorites': 7.67, 'std_retweet': 3.49}
 film: |Blue Jasmine| PREDICT: |oscar|
 
-|retweets| sd: 66.520000 mean: 5.390000 min: 0 max: 943
-|favorites| sd: 0.940000 mean: 0.350000 min: 0 max: 6
-|polarities| sd: 0.300000 mean: 0.070000 min: -1 max: 1
-|friends| sd: 1661.150000 mean: 820.100000 min: 6 max: 11756
-|followers| sd: 10398.440000 mean: 2084.860000 min: 5 max: 85704
-{'length_of_film': 16, 'avg_polarity': 0.07, 'log_retweets': 10.08, 'number_of_words': 4, 'log_favorites': 6.13, 'std_retweet': 66.52}
-film: |12 Years a Slave| PREDICT: |razzies|
+|retweets| sd: 167.790000 mean: 14.270000 min: 0 max: 2967
+|favorites| sd: 2.980000 mean: 0.490000 min: 0 max: 105
+|polarities| sd: 0.290000 mean: 0.050000 min: -1 max: 1
+|friends| sd: 3363.420000 mean: 1039.710000 min: 0 max: 69007
+|followers| sd: 15259.700000 mean: 3148.260000 min: 0 max: 299165
+{'length_of_film': 16, 'avg_polarity': 0.05, 'log_retweets': 14.8, 'number_of_words': 4, 'log_favorites': 9.94, 'std_retweet': 167.79}
+film: |12 Years a Slave| PREDICT: |oscar|
 
-|retweets| sd: 49.230000 mean: 4.380000 min: 0 max: 698
-|favorites| sd: 0.650000 mean: 0.180000 min: 0 max: 5
-|polarities| sd: 0.240000 mean: 0.160000 min: 0 max: 1
-|friends| sd: 3436.990000 mean: 1337.880000 min: 2 max: 44902
-|followers| sd: 4796.250000 mean: 1657.970000 min: 0 max: 63409
-{'length_of_film': 15, 'avg_polarity': 0.16, 'log_retweets': 9.78, 'number_of_words': 3, 'log_favorites': 5.17, 'std_retweet': 49.23}
+|retweets| sd: 46.040000 mean: 11.710000 min: 0 max: 213
+|favorites| sd: 1.260000 mean: 0.220000 min: 0 max: 31
+|polarities| sd: 0.240000 mean: 0.150000 min: 0 max: 1
+|friends| sd: 6963.170000 mean: 2054.690000 min: 0 max: 122873
+|followers| sd: 11654.960000 mean: 2978.100000 min: 0 max: 176342
+{'length_of_film': 15, 'avg_polarity': 0.15, 'log_retweets': 13.94, 'number_of_words': 3, 'log_favorites': 8.24, 'std_retweet': 46.04}
 film: |The Lone Ranger| PREDICT: |oscar|
 
-|retweets| sd: 0.160000 mean: 0.030000 min: 0 max: 1
-|favorites| sd: 0.700000 mean: 0.140000 min: 0 max: 7
-|polarities| sd: 0.260000 mean: 0.180000 min: -1 max: 1
-|friends| sd: 1124.940000 mean: 1151.180000 min: 0 max: 9582
-|followers| sd: 3242.570000 mean: 1515.680000 min: 0 max: 39570
-{'length_of_film': 17, 'avg_polarity': 0.18, 'log_retweets': 2.32, 'number_of_words': 3, 'log_favorites': 4.81, 'std_retweet': 0.16}
-film: |A Madea Christmas| PREDICT: |razzies|
+|retweets| sd: 0.550000 mean: 0.150000 min: 0 max: 4
+|favorites| sd: 0.760000 mean: 0.200000 min: 0 max: 8
+|polarities| sd: 0.280000 mean: 0.140000 min: -1 max: 1
+|friends| sd: 1480.010000 mean: 996.370000 min: 0 max: 17253
+|followers| sd: 2482.790000 mean: 1232.310000 min: 0 max: 33503
+{'length_of_film': 17, 'avg_polarity': 0.14, 'log_retweets': 6.69, 'number_of_words': 3, 'log_favorites': 7.08, 'std_retweet': 0.55}
+film: |A Madea Christmas| PREDICT: |oscar|
 
-|retweets| sd: 4417.080000 mean: 444.580000 min: 0 max: 44394
-|favorites| sd: 1.040000 mean: 0.400000 min: 0 max: 11
-|polarities| sd: 0.350000 mean: 0.030000 min: -1 max: 1
-|friends| sd: 1615.960000 mean: 731.340000 min: 0 max: 17166
-|followers| sd: 3196.490000 mean: 1152.170000 min: 9 max: 28144
-{'length_of_film': 8, 'avg_polarity': 0.03, 'log_retweets': 16.44, 'number_of_words': 2, 'log_favorites': 6.32, 'std_retweet': 4417.08}
+|retweets| sd: 2184.780000 mean: 109.680000 min: 0 max: 44294
+|favorites| sd: 3.490000 mean: 0.700000 min: 0 max: 66
+|polarities| sd: 0.300000 mean: 0.060000 min: -1 max: 1
+|friends| sd: 4016.010000 mean: 1883.470000 min: 10 max: 46314
+|followers| sd: 18393.090000 mean: 3117.870000 min: 7 max: 358941
+{'length_of_film': 8, 'avg_polarity': 0.06, 'log_retweets': 15.46, 'number_of_words': 2, 'log_favorites': 8.16, 'std_retweet': 2184.78}
 film: |Movie 43| PREDICT: |razzies|
 
-|retweets| sd: 181.170000 mean: 14.400000 min: 0 max: 2567
-|favorites| sd: 2.970000 mean: 0.290000 min: 0 max: 42
-|polarities| sd: 0.270000 mean: 0.100000 min: -1 max: 1
-|friends| sd: 2830.270000 mean: 648.510000 min: 2 max: 39552
-|followers| sd: 4679.520000 mean: 987.020000 min: 7 max: 57916
-{'length_of_film': 11, 'avg_polarity': 0.1, 'log_retweets': 11.49, 'number_of_words': 2, 'log_favorites': 5.86, 'std_retweet': 181.17}
-film: |After Earth| PREDICT: |oscar|
+|retweets| sd: 83.250000 mean: 4.940000 min: 0 max: 2565
+|favorites| sd: 1.340000 mean: 0.200000 min: 0 max: 31
+|polarities| sd: 0.260000 mean: 0.040000 min: -1 max: 1
+|friends| sd: 3789.080000 mean: 796.350000 min: 0 max: 95480
+|followers| sd: 10873.920000 mean: 1641.650000 min: 0 max: 313680
+{'length_of_film': 11, 'avg_polarity': 0.04, 'log_retweets': 12.58, 'number_of_words': 2, 'log_favorites': 7.95, 'std_retweet': 83.25}
+film: |After Earth| PREDICT: |razzies|
 
 # Features in film's characteristic
 
@@ -500,7 +455,7 @@ film: |After Earth| PREDICT: |oscar|
 
 ## oscar
 
-match 2 out of 5, accuracy=40%
+match 5 out of 5, accuracy=100%
 
 ## razzies
 
@@ -508,5 +463,5 @@ match 2 out of 4, accuracy=50%
 
 ## overall
 
-match 4 out of 9, accuracy=44%
+match 7 out of 9, accuracy=78%
 
