@@ -1,0 +1,113 @@
+Inception - oscar: 2000
+Toy Story 3 - oscar: 2000
+The King's Speech - oscar: 481
+Babel - oscar: 2000
+Lincoln - oscar: 2000
+Argo - oscar: 2000
+Midnight in Paris - oscar: 716
+The Social Network - oscar: 2000
+Black Swan - oscar: 2000
+The Departed - oscar: 2000
+Life of Pi - oscar: 2000
+The Artist - oscar: 2000
+The Help - oscar: 2000
+Atonement - oscar: 2000
+Natalie Portman - oscar: 2000
+Good Night, and Good Luck - oscar: 809
+Little Miss Sunshine - oscar: 2000
+Michael Clayton - oscar: 195
+The Descendants - oscar: 1838
+In a Better World - oscar: 584
+The Reader - oscar: 2000
+Munich - oscar: 2000
+Capote - oscar: 2000
+The Queen - oscar: 2000
+Extremely Loud and Incredibly Close - oscar: 102
+The Iron Lady - oscar: 317
+Slumdog Millionaire - oscar: 604
+Silver Linings Playbook - oscar: 2000
+Brokeback Mountain - oscar: 1770
+There Will Be Blood - oscar: 1608
+District 9 - oscar: 1078
+No Country for Old Men - oscar: 917
+The Curious Case of Benjamin Button - oscar: 1073
+The Hurt Locker - oscar: 220
+Avatar - oscar: 2000
+The Happening - razzies: 1799
+The Dukes of Hazzard - razzies: 436
+Norbit - razzies: 786
+Transformers: Revenge of the Fallen - razzies: 153
+The Love Guru - razzies: 185
+Battleship - razzies: 2000
+Land of the Lost - razzies: 372
+That's My Boy - razzies: 2000
+The Twilight Saga: Eclipse - razzies: 374
+Lady in Water - razzies: 21
+Dirty Love - razzies: 777
+House of Wax - razzies: 258
+BloodRayne - razzies: 85
+Jack and Jill - razzies: 1413
+Vampires Suck - razzies: 216
+Valentine's Day - razzies: 2000
+The Twilight Saga: Breaking Dawn - Part 2 - razzies: 424
+The Wicker Man - razzies: 472
+Bratz - razzies: 2000
+Little Man - razzies: 2000
+The Last Airbender - razzies: 2000
+The Hottie & the Nottie - razzies: 5
+Son of the Mask - razzies: 74
+Just Go with It - razzies: 2000
+Transformers: Dark of the Moon - razzies: 439
+The Bounty Hunter - razzies: 905
+Bucky Larson - razzies: 24
+I Know Who Killed Me - razzies: 29
+All About Steve - razzies: 98
+Daddy Day Camp - razzies: 17
+Deuce Bigalow - razzies: 67
+Disaster Movie - razzies: 479
+Sex and the City 2 - razzies: 51
+G.I. Joe: The Rise of Cobra - razzies: 18
+Basic Instinct 2 - razzies: 13
+I Now Pronounce You Chuck and Larry - razzies: 254
+film: |Frozen| PREDICT: |oscar|
+
+razzy tweets: 730, oscary tweets: 1270
+film: |Dallas Buyers Club| PREDICT: |oscar|
+
+razzy tweets: 658, oscary tweets: 1342
+film: |Gravity| PREDICT: |oscar|
+
+razzy tweets: 566, oscary tweets: 1434
+film: |Blue Jasmine| PREDICT: |oscar|
+
+razzy tweets: 172, oscary tweets: 337
+film: |12 Years a Slave| PREDICT: |oscar|
+
+razzy tweets: 617, oscary tweets: 1383
+film: |The Lone Ranger| PREDICT: |oscar|
+
+razzy tweets: 406, oscary tweets: 937
+film: |A Madea Christmas| PREDICT: |oscar|
+
+razzy tweets: 276, oscary tweets: 406
+film: |Movie 43| PREDICT: |oscar|
+
+razzy tweets: 155, oscary tweets: 255
+film: |After Earth| PREDICT: |oscar|
+
+razzy tweets: 363, oscary tweets: 880
+
+# Prediction
+
+## oscar
+
+match 5 out of 5, accuracy=100%
+
+## razzies
+
+match 0 out of 4, accuracy=0%
+
+## overall
+
+match 5 out of 9, accuracy=56%
+
