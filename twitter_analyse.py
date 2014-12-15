@@ -48,6 +48,7 @@ def attribute_to_characteristic(tweet):
     blob = TextBlob(text)
     polarity = blob.sentiment.polarity
 
+    '''
     ret['scaled_polarity'] = calculate_scaled_polarity(
         polarity,
         int(retweets),
@@ -56,12 +57,13 @@ def attribute_to_characteristic(tweet):
         int(friends),
         int(publishes)
     )
-    ret['retweets'] = retweets
-    ret['favorites'] = favorites
-    ret['followers'] = followers
-    ret['friends'] = friends
-    ret['publishes'] = publishes
-    ret['polarity'] = polarity
+    '''
+    ret['retweets'] = 'l' if retweets < 100 else 'h'
+    ret['favorites'] = 'l' if favorites < 50 else 'h'
+    #ret['followers'] = followers
+    #ret['friends'] = friends
+    #ret['publishes'] = publishes
+    ret['polarity'] = 'l' if polarity < -0.1 else 'h'
 
     # print 'p=%.2f re=%d fav=%d, fol=%d, fd=%d, pub=%d' % (
     #     polarity, retweets, favorites, followers, friends, publishes
@@ -167,29 +169,6 @@ def tweets2film(tweet_characteristics):
     return ret
 
 
-def construct_film_characteristic(film_name, tweet_characteristics):
-    """
-    Construct featuresets for given parameters
-
-    @param film_name string
-    @param tweet_characteristics list of dict
-
-    @return featuresets
-    """
-    ret = {}
-
-    # Analyze film's attributes
-    ret['length_of_film'] = len(film_name)
-    ret['number_of_words'] = len(film_name.split(' '))
-
-    # Analyze tweet's characteristics
-    aggreated_characteristic = tweets2film(tweet_characteristics)
-
-    # Merge 2 characteristics
-    ret = dict(ret.items() + aggreated_characteristic.items())
-
-    return ret
-
 features = []
 
 for my_dir in [OSCAR_DIR, RAZZIES_DIR]:
@@ -253,8 +232,17 @@ for predict_label in predict_labels:
         if result == predict_label:
             report[predict_label]['number_of_match'] += 1
 
-        print 'film: |%s| PREDICT: |%s|\n' % (film_name, result)
-        print 'razzy tweets: {0}, oscary tweets: {1}'.format(resultSet['razzies'], resultSet['oscar'])
+        print 'film: |%s| PREDICT: |%s|\n razzy tweets %d oscary tweets %d ratio %f' % (film_name, result, resultSet['razzies'], resultSet['oscar'], resultSet['razzies']/resultSet['oscar'])
+
+classifier.show_most_informative_features()
+'''
+report['features'] = film_characteristic.keys()
+
+print "# Features in film's characteristic\n"
+
+for f in report['features']:
+    print '* %s' % f
+    '''
 
 print '\n# Prediction\n'
 for predict_label in predict_labels:
