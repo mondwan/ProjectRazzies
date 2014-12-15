@@ -25,6 +25,7 @@ TWEET_DIR = os.path.join('.', 'twitter_data')
 OSCAR_DIR = os.path.join(TWEET_DIR, 'oscar')
 RAZZIES_DIR = os.path.join(TWEET_DIR, 'razzies')
 PREDICT_DIR = os.path.join(TWEET_DIR, 'proof')
+CANDIDATE_DIR = os.path.join(TWEET_DIR, 'candidates')
 # PREDICT_OSCAR_DIR = os.path.join(PREDICT_DIR, 'oscar')
 # PREDICT_RAZZIES_DIR = os.path.join(PREDICT_DIR, 'razzies')
 
@@ -190,6 +191,29 @@ def construct_film_characteristic(film_name, tweet_characteristics):
     return ret
 
 predict_labels = ['oscar', 'razzies']
+def predictCandidates():
+      list_of_files = os.listdir(CANDIDATE_DIR)
+
+      for fn in list_of_files:
+          path = os.path.join(CANDIDATE_DIR, fn)
+          film_name = os.path.splitext(fn)[0]
+
+          with open(path, 'r') as f:
+              tweets = json.load(f)
+              tweets = json.loads(tweets)
+
+          tweet_characteristics = []
+          for tweet in tweets:
+              # Per tweet analyze
+              characteristic = attribute_to_characteristic(tweet)
+              tweet_characteristics.append(characteristic)
+
+          aggreated_characteristic = tweets2film(tweet_characteristics)
+          resultNo = classifier.predict(aggreated_characteristic.values())
+          result = predict_labels[resultNo]
+          
+          print 'film: |%s| PREDICT: |%s|\n' % (film_name, result)
+
 features = []
 
 labels = []
@@ -286,3 +310,5 @@ print 'match %d out of %d, accuracy=%d%%\n' % (
         ) * 100
     )
 )
+
+predictCandidates()

@@ -399,7 +399,7 @@ film: |12 Years a Slave| PREDICT: |oscar|
 |polarities| sd: 0.240000 mean: 0.150000 min: 0 max: 1
 |friends| sd: 6963.170000 mean: 2054.690000 min: 0 max: 122873
 |followers| sd: 11654.960000 mean: 2978.100000 min: 0 max: 176342
-film: |The Lone Ranger| PREDICT: |razzies|
+film: |The Lone Ranger| PREDICT: |oscar|
 
 |retweets| sd: 0.550000 mean: 0.150000 min: 0 max: 4
 |favorites| sd: 0.760000 mean: 0.200000 min: 0 max: 8
@@ -431,9 +431,51 @@ match 4 out of 5, accuracy=80%
 
 ## razzies
 
-match 3 out of 4, accuracy=75%
+match 2 out of 4, accuracy=50%
 
 ## overall
 
-match 7 out of 9, accuracy=78%
+match 6 out of 9, accuracy=67%
+
+|retweets| sd: 340.940000 mean: 36.980000 min: 0 max: 6514
+|favorites| sd: 2.530000 mean: 0.510000 min: 0 max: 70
+|polarities| sd: 0.240000 mean: 0.140000 min: -1 max: 1
+|friends| sd: 5410.790000 mean: 886.050000 min: 0 max: 111023
+|followers| sd: 29733.290000 mean: 3191.150000 min: 0 max: 1069526
+film: |Sans| PREDICT: |oscar|
+
+|retweets| sd: 1.130000 mean: 0.300000 min: 0 max: 13
+|favorites| sd: 0.580000 mean: 0.130000 min: 0 max: 6
+|polarities| sd: 0.120000 mean: 0.080000 min: 0 max: 0
+|friends| sd: 1624.620000 mean: 763.240000 min: 0 max: 14501
+|followers| sd: 4682.830000 mean: 1474.720000 min: 0 max: 38909
+film: |Last Passenger| PREDICT: |razzies|
+
+|retweets| sd: 463.980000 mean: 22.270000 min: 0 max: 14626
+|favorites| sd: 3.050000 mean: 0.660000 min: 0 max: 81
+|polarities| sd: 0.380000 mean: 0.210000 min: -1 max: 1
+|friends| sd: 7946.260000 mean: 1012.910000 min: 0 max: 305337
+|followers| sd: 30706.070000 mean: 2609.740000 min: 0 max: 840627
+film: |The Lego movie| PREDICT: |oscar|
+
+|retweets| sd: 137.530000 mean: 19.980000 min: 0 max: 1942
+|favorites| sd: 1.040000 mean: 0.240000 min: 0 max: 25
+|polarities| sd: 0.250000 mean: 0.130000 min: -1 max: 1
+|friends| sd: 3241.100000 mean: 722.320000 min: 0 max: 90117
+|followers| sd: 19473.600000 mean: 1877.160000 min: 0 max: 562402
+film: |Need for speed| PREDICT: |oscar|
+
+|retweets| sd: 1203.500000 mean: 146.040000 min: 0 max: 10854
+|favorites| sd: 1.400000 mean: 0.280000 min: 0 max: 39
+|polarities| sd: 0.250000 mean: 0.080000 min: -1 max: 1
+|friends| sd: 4562.540000 mean: 986.100000 min: 0 max: 138881
+|followers| sd: 97932.220000 mean: 4370.780000 min: 0 max: 4332957
+film: |Godzilla| PREDICT: |oscar|
+
+|retweets| sd: 233.020000 mean: 40.190000 min: 0 max: 4449
+|favorites| sd: 2.490000 mean: 0.350000 min: 0 max: 98
+|polarities| sd: 0.180000 mean: -0.100000 min: 0 max: 0
+|friends| sd: 3056.640000 mean: 943.490000 min: 0 max: 63535
+|followers| sd: 33715.920000 mean: 2868.940000 min: 0 max: 1179895
+film: |Left Behind| PREDICT: |oscar|
 
